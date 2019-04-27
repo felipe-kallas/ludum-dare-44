@@ -14,7 +14,8 @@ Comming soon...
 
 ## Technology
 
-Comming soon...
+* Unity3d
+* Krita
 
 ## References
 
