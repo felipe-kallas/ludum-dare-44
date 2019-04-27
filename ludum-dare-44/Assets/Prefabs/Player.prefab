@@ -243,6 +243,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44002d81017320b41b3c404658e1d6f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerStats:
+    health: 5
+  fallBoundary: -10
 --- !u!1 &100004
 GameObject:
   m_ObjectHideFlags: 0
