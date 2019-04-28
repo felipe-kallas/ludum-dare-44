@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\EnemyAI.cs" />
     <Compile Include="Assets\Scripts\GameMaster.cs" />
+    <Compile Include="Assets\Scripts\HeartController.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
