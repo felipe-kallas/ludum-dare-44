@@ -17,4 +17,5 @@ public class Enemy : MonoBehaviour
 			GameMaster.KillEnemy (this);
 		}
 	}
+
 }

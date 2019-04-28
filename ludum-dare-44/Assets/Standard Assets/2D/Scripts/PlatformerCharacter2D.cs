@@ -90,7 +90,6 @@ namespace UnityStandardAssets._2D
                 }
             }
             
-            if (jump && m_Grounded) Debug.Log ("Pulei");
             // If the player should jump...
             if (m_Grounded && jump && m_Anim.GetBool("Ground"))
             {

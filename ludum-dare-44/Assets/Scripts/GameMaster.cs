@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour
 {
@@ -24,8 +25,7 @@ public class GameMaster : MonoBehaviour
 
 
     public static void KillPlayer (Player player) {
-        Destroy (player.gameObject);
-        gm.StartCoroutine (gm.RespawnPlayer ());
+        SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
     }
 
     public static void KillEnemy (Enemy enemy) {

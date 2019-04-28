@@ -15,13 +15,24 @@ public class Player : MonoBehaviour
 	public void DamagePlayer (int damage) {
 		playerStats.health -= damage;
 		if (playerStats.health <= 0) {
+			// HeartController.updateHealth (0);
 			GameMaster.KillPlayer (this);
 		}
+		HeartController.updateHealth (playerStats.health);
 	}
 
 	void Update () {
 		if (transform.position.y <= fallBoundary) {
 			DamagePlayer (playerStats.health);
+		}
+	}
+
+	
+	void OnCollisionEnter2D (Collision2D col) {
+        // Debug.Log ("Bateu em algo");
+		if (col.gameObject.tag == "Enemy") {
+            GameMaster.KillEnemy (col.gameObject.GetComponent <Enemy> ());
+			DamagePlayer (1);
 		}
 	}
 }
